@@ -1,0 +1,183 @@
+.homeImg {
+    width: 1025px;
+
+
+    float: left;
+
+}
+ .assemblingImg{
+padding-bottom: 5px;
+     padding-left: 175px;
+ }
+ .programmingImg{
+     padding-left: 10px;
+ }
+ .solderingImg{
+     padding-top: 10px;
+ }
+ .hovercontrast:hover{
+     filter: contrast(50%);
+ }
+ .letters{
+     padding-left: 1600px;
+ }
+
+.header .menu .button{
+    display: inline-block;
+    background: #E0E6F8;
+    color: #0B0B61;
+    padding: 0 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px ;
+}
+.menu{
+    padding-top: 20px;
+    padding-left: 500px;
+    width: 1500px;
+    transform: scale(1.5, 1.5);
+    align-content: center;
+
+}
+.letters{
+    width: 250px;
+}
+.header img{
+    float:left;
+}
+.button{
+    width: 250px;
+    margin: auto;
+}
+.button h2{
+    text-align: center
+}
+body{
+    background-color: royalblue;
+}
+hr{
+    border: 5px solid azure;
+    color: azure;
+    display: block;
+    margin-top: 50px;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+#quests{
+    height: 3000px;
+    background-color: green;
+}
+#aboutUz{
+    height: 3000px;
+    background-color: blueviolet;
+}
+#schedlule{
+    height: 3000px;
+    background-color: yellow;
+}
+.header{
+    position: fixed;
+
+    top: 0;
+    background-color: royalblue;
+    width: 3000px;
+}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signin buttons and add an equal width */
+.cancelbtn, .signinbtn {
+    float: left;
+    width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    width: 500px;
+    padding: 16px;
+    margin: auto;
+    background-color: white;
+}
+
+/* The Modal (background) */
+.modal {
+    width: 500px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+    margin: auto;
+
+}
+
+/* Modal Content/Box */
+
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signin button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signinbtn {
+        width: 100%;
+    }
+}

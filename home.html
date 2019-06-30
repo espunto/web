@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="style.css" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="header">
+    <img src="images/borkinoLogo.png" width="150" height="125" >
+
+    <div class="menu">
+        <a href="#quests" class="button"><h2>Квесты</h2></a>
+        <a href="#schedlule" class="button"><h2>События</h2></a>
+        <a href="#aboutUz" class="button"><h2>О наз</h2></a>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; " ><img src="sffguy.png" width="150px"></button>
+    </div>
+
+</div>
+<hr>
+
+
+
+<div id="quests"></div>
+<div id="schedlule"></div>
+<div id="aboutUz"></div>
+<div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+        <div class="container" style="font-size: 25px">
+            <div style="background-color: #00e212;
+            padding: 25px"><h1>sign in</h1>
+            <h3>Please fill in this form to create an account.</h3></div>
+            <hr>
+            <label for="login"><b>login</b></label>
+            <input type="text" placeholder="Enter login" name="login" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+            <p style="font-size: 15px";>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signinbtn">sign in</button>
+            </div>
+            <>Not registered your account yet? <a href="register.html" style="color:dodgerblue">Register</a>.</>
+        </div>
+    </form>
+</div>
+</body>
+<div id="fb-root"></div>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6"></script>
+
+</html>
